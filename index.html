@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- this code below can be achieved by using SHIFT + 1 + ENTER 
+    <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        </head>
+        <body>
+            
+        </body>
+        </html> -->
+
+<head>
+    <!-- meta tags must be children of the head element and help to add information to describe the webpage itself as well as link other files to it -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link tags are used to link external files to the website(css files, preloading js files, web manifests) -->
+     <link  rel="stylesheet" href="style.css">
+     <!-- when looking at style.css, we see that a * is used and css is applied. If you hover over it, you see element -->
+      <!-- this means that css was applied to each element on the webpage -->
+
+    <!-- title tags set the title of the website in the browser-->
+    <title>My First Website</title>
+
+   <!-- the code below applies colour to all p tags in the script. However, due to the rendering of code from top to bottom and in-line styling, it is overidden in the case of the blue text-->
+   <!-- cm can also be used for font size -->
+   <style>
+        p{     
+            color: red;
+        }
+
+        .para {
+            font-size: 20px;
+        }
+
+        #p1 {
+            color: green;
+            font-size: 5rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- we also have heading elements from h1 to h6 -->
+    <h1>This is an h1 heading</h1>
+    <h2>This is an h2 heading</h2>
+    <h3>This is an h3 heading</h3>
+    <h4>This is an h4 heading</h4>
+    <h5>This is an h5 heading</h5>
+    <h6>This is an h6 heading</h6>
+
+    <p>This is my first website</p> <br>     <!-- p tags are for paragraphs and br is for a line break-->
+    <p>Welcome</p>      
+
+    <!-- there are also attributes which are written in the opening tag of an element-->
+    <!-- the hidden attribute hides an element. Hidden does not accept boolean values so hidden = "false" will not work. Just remove hidden-->
+    <p hidden>I want this to be hidden</p>     
+
+    <!-- there are also titles-->
+    <p title = "My title">This is a title</p>
+
+    <!-- style attributes are also present to add colour-->
+    <p style = "color: blue">This is the style attribute</p>    <!--this is in-line css-->
+
+    <!-- tags can also have IDs unique to them. Classes can be added too-->
+    <!-- in the style section, id is referred to by #ID_name and class is referred to by .Class_name as shown above-->
+    <p id = "p1">This is paragraph 1</p>
+    <p class = "para">Class para</p>
+
+    <!-- hyperlinks can be added with the aid of an anchor tag and href(hyperlink reference url)-->
+     <!-- width and height can also be added in the image tag-->
+    <img src = "cage.gf" alt="This is Nicolas Cage"><br>  <!--alt stands for alternating and can contain text. Used for a source that isn't working-->
+    <input type = "text">
+    <a href="https://www.google.com" target="_blank">This is a link</a> <br><br>
+
+    <!-- anchor tags work this way as well, i.e. linking pages -->
+    <img src = "cage.gif" alt=""><br>
+    <input type="password">
+    <a href="signup.html">This is a link</a> <br><br>
+
+    <!-- input tags work this way as well -->
+    <input type="email"><br><br>
+
+    <!-- input tags work this way as well -->
+    <input type="checkbox"><br><br>
+
+    <!-- input tags work this way as well -->
+    <input type="range"><br><br>
+
+    <!-- input tags work this way as well -->
+    <input type="date"><br><br>
+
+    <!-- input tags work this way as well -->
+    <input type="radio"><br><br>
+
+    <!-- input tags work this way as well -->
+    <input type="submit"> <br><br>
+
+    <!-- input tags work this way as well -->
+    <input type="reset"><br><br>
+
+    <!-- input tags work this way as well -->
+    <input type="button"><br><br>
+
+    <!-- input tags work this way as well -->
+    <input type="color"><br><br>
+
+    <!-- input tags work this way as well -->
+    <input type="file"><br><br>
+
+    <!-- input tags work this way as well -->
+    <input type="reset"><br><br>
+
+    <!-- input tags work this way as well -->
+    <input type="hidden"><br><br>
+
+    <!-- here is a list of typography elements -->
+     <b>bold</b> <br>
+     <strong>strong text</strong> <br>
+     <code>code</code><br>
+     <hr>  <!-- the hr tag is a thematic break -->
+     <samp>Sample output from a computer program</samp><br>
+     <kbd>Keyboard input</kbd><br>
+     <mark>Highlighted text</mark><br>
+     <em>Emphasised text</em><br>       <!--italics-->
+     <var>Variable</var><br>
+     <cite>Citation</cite><br>
+     <dfn>Definition</dfn><br>
+     <u>Underlined</u><br>
+     <s>strikethrough</s><br>
+     Text<sub>subscript</sub><br>
+     Text<sup>superscript</sup><br>
+
+       <!-- the pre tag, aka preformatting, preserves any whitespaces found in the tag contents -->
+        <pre>
+            This
+            is 
+            preformatting in full effect
+        </pre>
+
+        <!-- blockquote tags are used to quote content from another site and has closing and ending tags-->
+
+        <!-- figure tags are used to embed an image on a page with a caption -->
+         <figure>
+            <img src="" alt="">
+            <figcaption>jgogifdjoi</figcaption>
+         </figure>
+
+         <!-- below are some grouping elements -->
+          <main>fsfsd</main>    <!-- the purpose of this is to be the parent element of the main content on the page-->
+
+          <ol> 
+            <li>This is an ordered list </li> <!--the li tag must be used for list items-->
+            <li>this is part of the list too</li>
+          </ol>
+
+          <ul> 
+            <li>This is an unordered list </li>
+            <li>this is part of the list too</li>
+          </ul>
+
+          <dl> 
+            <li>This is a description list </li>
+            <li>this is part of the list too</li>
+          </dl>
+
+          <!-- we also have the description term(dt) and description definition(dd) -->
+          <dl> 
+            <dt>Coffee</dt>
+            <dd>Black Hot Drink</dd>
+          </dl>
+
+          <!-- shortcut: ul>li>a and select a:link from emmet. You can also *n the li to get multiple items -->
+
+          <!-- there is also the divider tag which is a generic block level grouping tag used to style content when no other grouping/section tag is available -->
+
+          <!-- there is the span tag which is used to style content withing a single line -->
+           <span>
+                jdsfkndgnbdf
+           </span>
+
+           <!-- now we have interactive elements -->
+            <details></details>    <!-- creates a collapsible ui element which can be expanded to show details-->
+            <summary></summary>    <!-- creates the visible heading of the details content-->
+            <dialog></dialog>       <!-- this provides customisable dialog box, modal or window-->
+      
+
+</body>
+
+</html>
+
